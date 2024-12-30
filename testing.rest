@@ -1,7 +1,7 @@
 DELETE http://localhost:3001/api/persons/2
 
 ### 
-GET http://localhost:3001/api/persons
+GET https://part3-xsfr.onrender.com/api/persons
 
 ###
 POST http://localhost:3001/api/persons 
