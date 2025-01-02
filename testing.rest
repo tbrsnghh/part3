@@ -1,7 +1,7 @@
 DELETE http://localhost:3001/api/persons/2
 
 ### 
-GET https://part3-xsfr.onrender.com/api/persons
+GET https://localhost:3001/api/persons
 
 ###
 POST http://localhost:3001/api/persons 
@@ -11,3 +11,8 @@ Content-Type: application/json
     "name": "ggg",
     "number": "1234567899"
 }
+
+###
+DELETE http://localhost:3001/api/persons/67736c3f29d2dee9ba6175ef
+###
+GET https://localhost:3001/api/persons
