@@ -65,6 +65,11 @@ app.post("/api/persons", (request, response, next) => {
       error: "name missing",
     });
   }
+  if(body.name.length < 3){
+    return response.status(400).json({
+      error: "name must be at least 3 characters long",
+    });
+  }
   if (persons.find((person) => person.name === body.name)) {
     return response.status(400).json({
       error: "name must be unique",
